@@ -1,0 +1,124 @@
+Omvesh Singh 
+LinkedIn: https://www.linkedin.com/in/omvesh-singh/                                                     Email: omveshsingh2004@gmail.com 
+GitHub:  https://github.com/Omveshsingh 
+   Mobile: +91-9807991271 
+
+SKILLS 
+
+• Languages: 
+C++, Java, Python, JavaScript, SQL 
+• Frameworks: 
+Pandas, NumPy, Matplotlib, Scikit-learn, Pytorch, Streamlit, Django 
+• Tools/Platforms: 
+Git, GitHub, HackerRank, FreeCodeCamp 
+• Soft Skills: 
+Problem-Solving, Team Player, Adaptability, Time Management 
+ 
+
+PROJECTS  
+
+•
+
+Smart PDF Processing & AI-powered Chatbot System | GitHub                                 August 2025 – October 2025 
+
+ 
+
+◦ 
+Engineered a document-intelligence workflow that converted unstructured PDFs into structured text using 
+OCR and preprocessing, increasing usable text extraction accuracy by 18–25% . 
+◦ 
+Built a modular pipeline for segmentation, feature enrichment, and embedding generation, enabling efficient 
+similarity search and topic-level retrieval. 
+◦ 
+Integrated a lightweight conversational layer using LLM-based inference to surface relevant information from 
+large documents with minimal latency. 
+◦ 
+Improved document-query resolution by optimizing chunk boundaries, indexing strategy, and retrieval logic, 
+yielding a 15–22% increase in answer relevance and retrieval precision over the initial implementation. 
+◦ 
+Tech: Python, OCR stack (pdf2image, Tesseract), embedding models, vector indices, LLM inference 
+frameworks.  
+ • Smart Traffic Management | GitHub 
+                                                                         March 2025 – May 2025 
+
+ 
+
+◦ 
+Developed an AI-driven traffic signal system using real-time vehicle detection with ResNet50 and a Random 
+Forest Regressor for dynamic green-light allocation. 
+◦ 
+Led the end-to-end ML pipeline: data preprocessing, model training, feature engineering, vehicle-type 
+weighting, and lane-width estimation. 
+◦ 
+Incorporated rule-based emergency vehicle prioritization with model-influenced overrides, enabling 
+accelerated green-phase switching and junction pre-clearance for ambulances, fire trucks.  
+◦ 
+Delivered measurable gains with 30% higher green-light utilization, 30–40% reduction in avoidable red-light 
+halts, and improved emergency vehicle clearance times, enhancing operational efficiency. 
+◦ 
+Tech: Python, Pytorch, Computer vision, pandas, pickle, sklearn 
+ 
+
+• AI-Powered Goal Assistant | Live                                                             
+ 
+         March 2025 - April 2025 
+◦ 
+Built a custom chatbot using Gemini’s API with functionality like Gemini, but tailored to new custom UI. 
+◦ 
+Engineered context sanitization and conversation state control, pruning unrelated history 
+dynamically to prevent drift and reinforce goal-focused interaction loops. 
+◦ 
+Developed task-specific supervised fine-tuning strategies (prompt-driven adaptation + few-shot 
+alignment), restricting generation to goal-centric reasoning while suppressing off-topic completions. 
+◦ 
+Ensured strict domain adherence via controlled generation policies, achieving high topical precision 
+with minimal hallucination or cross-domain leakage. 
+◦ 
+Tech: HTML, CSS, JavaScript Server, Gemini’s API, Render (for deployment) 
+ 
+
+ TRAINING 
+
+•
+
+Machine Learning with Data Science | Github                                                                          June 2025 – July 2025 
+
+ 
+◦ Performed EDA with NumPy and Pandas to extract user-behavior patterns and improve preprocessing. 
+◦ Trained and evaluated multiple classification models, including Logistic Regression, Random Forest,using 
+
+Scikit-learn, resulting in a 12–20% lift in predictive accuracy across experiments. 
+◦ Engineered customer behavior features (browsing time, clicks, purchase history) and built a probability-based 
+
+pipeline to identify high-intent customers for targeted e-commerce marketing.  
+CERTIFICATES 
+• Data Analytics with Python from NPTEL | Certificate  
+ 
+ 
+                                            June 2025 
+• Unveiling Basic Python towards ML/AI by CSE Pathshala | Certificate               
+ 
+ 
+      May 2024 
+
+EDUCATION 
+
+Lovely Professional University 
+  Punjab, India 
+Bachelor of Technology - Computer Science and Engineering; CGPA: 8.38                 August 2023 - Present 
+
+•
+
+•
+
+St. John’s School 
+ Varanasi, Uttar Pradesh 
+Intermediate; Percentage: 87 
+  April 2022 - May 2023 
+
+• 
+
+St. John’s School                                                                                                                   Varanasi, Uttar Pradesh 
+Matriculation; Percentage: 90 
+   April 2020 - July 2021 
+
