@@ -29,8 +29,8 @@ export default function Achievements() {
   return (
     <SectionWrapper id="achievements">
       <div className="text-center mb-16 md:mb-20">
-        <h2 className="heading-section text-white mb-4">Milestones & Achievements</h2>
-        <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
+        <h2 className="heading-section text-[var(--foreground)] mb-4">Milestones & Achievements</h2>
+        <p className="text-[var(--text-secondary)] text-lg md:text-xl max-w-2xl mx-auto font-light">
           A track record of continuous learning, problem-solving, and professional growth.
         </p>
       </div>
@@ -49,25 +49,25 @@ export default function Achievements() {
 
             <div className="relative z-10">
               <div className="flex justify-between items-start mb-8">
-                <div className={`w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center ${achievement.iconColor} shadow-inner`}>
+                <div className={`w-14 h-14 rounded-2xl bg-[var(--btn-secondary-bg)] border border-[var(--btn-secondary-border)] flex items-center justify-center ${achievement.iconColor} shadow-inner`}>
                   {achievement.icon}
                 </div>
-                <div className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[10px] font-bold tracking-widest text-zinc-500 uppercase">
+                <div className="px-3 py-1 rounded-full border border-[var(--card-border)] bg-[var(--btn-secondary-bg)] text-[10px] font-bold tracking-widest text-[var(--text-secondary)] uppercase">
                   {achievement.subtitle}
                 </div>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-zinc-500 transition-all duration-300">
+              <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-[var(--foreground)] mb-4 transition-all duration-300">
                 {achievement.title}
               </h3>
 
-              <p className="text-zinc-400 leading-relaxed font-light text-lg">
+              <p className="text-[var(--text-secondary)] leading-relaxed font-light text-lg">
                 {achievement.desc}
               </p>
             </div>
 
-            <div className="relative z-10 mt-12 flex items-center gap-2 text-zinc-500 group-hover:text-white transition-colors duration-300">
-              <div className="h-[1px] w-8 bg-zinc-800 group-hover:bg-white transition-all duration-500" />
+            <div className="relative z-10 mt-12 flex items-center gap-2 text-[var(--text-secondary)] group-hover:text-[var(--foreground)] transition-colors duration-300">
+              <div className="h-[1px] w-8 bg-[var(--card-border)] group-hover:bg-[var(--accent)] transition-all duration-500" />
               <span className="text-xs font-bold tracking-widest uppercase text-purple-400 group-hover:text-purple-300">View Reference</span>
             </div>
           </a>

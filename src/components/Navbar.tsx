@@ -30,7 +30,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[var(--nav-bg)] backdrop-blur-lg border-b border-white/10 py-4' : 'bg-transparent py-6'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[var(--nav-bg)] backdrop-blur-lg border-b border-[var(--card-border)] py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between">
 
         {/* Logo */}
@@ -42,7 +42,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8 bg-[var(--btn-secondary-bg)] backdrop-blur-md px-6 py-2.5 rounded-full border border-white/5">
+        <nav className="hidden md:flex items-center gap-8 bg-[var(--btn-secondary-bg)] backdrop-blur-md px-6 py-2.5 rounded-full border border-[var(--btn-secondary-border)]">
           {navLinks.map((link) => (
             <a key={link.name} href={link.href} className="text-[13px] font-semibold tracking-wide text-[var(--text-secondary)] hover:text-[var(--foreground)] transition-colors uppercase">
               {link.name}
@@ -83,7 +83,7 @@ export default function Navbar() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="fixed inset-0 z-[100] bg-black p-6 flex flex-col"
+            className="fixed inset-0 z-[100] bg-[var(--background)] p-6 flex flex-col"
           >
             <div className="flex justify-between items-center mb-12">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-600 to-indigo-500 flex items-center justify-center">

@@ -32,8 +32,8 @@ export default function Projects() {
   return (
     <SectionWrapper id="projects">
       <div className="text-center mb-16 md:mb-20">
-        <h2 className="heading-section text-white mb-4">Selected Case Studies</h2>
-        <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
+        <h2 className="heading-section text-[var(--foreground)] mb-4">Selected Case Studies</h2>
+        <p className="text-[var(--text-secondary)] text-lg md:text-xl max-w-2xl mx-auto font-light">
           A showcase of intelligent solutions designed to solve complex challenges and drive tangible results.
         </p>
       </div>
@@ -53,25 +53,25 @@ export default function Projects() {
                   src={p.image}
                   alt={p.title}
                   fill
-                  className="object-cover opacity-20 group-hover:opacity-40 transition-all duration-700 group-hover:scale-105"
+                  className="object-cover transition-all duration-700 group-hover:scale-105 opacity-[var(--image-opacity)] group-hover:opacity-[var(--image-opacity-hover)]"
                 />
               )}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)] via-[var(--background)]/60 to-transparent" />
             </div>
 
             {/* Content */}
             <div className="relative z-10 flex justify-between items-start">
-              <div className="px-3 py-1 rounded-full border border-white/10 bg-black/50 text-xs font-semibold tracking-wide text-zinc-300 backdrop-blur-md">
+              <div className="px-3 py-1 rounded-full border border-[var(--card-border)] bg-[var(--background)]/50 text-xs font-semibold tracking-wide text-[var(--text-secondary)] backdrop-blur-md">
                 Case Study
               </div>
-              <div className="w-10 h-10 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity -translate-y-2 group-hover:translate-y-0 duration-300 backdrop-blur-md">
+              <div className="w-10 h-10 rounded-full border border-[var(--card-border)] bg-[var(--btn-secondary-bg)] flex items-center justify-center text-[var(--foreground)] opacity-0 group-hover:opacity-100 transition-opacity -translate-y-2 group-hover:translate-y-0 duration-300 backdrop-blur-md">
                 <FiArrowUpRight size={20} />
               </div>
             </div>
 
             <div className="relative z-10 mt-auto pt-10">
-              <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-2">{p.title}</h3>
-              <p className="text-zinc-400 leading-relaxed font-light">{p.desc}</p>
+              <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-[var(--foreground)] mb-2">{p.title}</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed font-light">{p.desc}</p>
             </div>
           </a>
         ))}

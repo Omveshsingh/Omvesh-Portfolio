@@ -63,8 +63,8 @@ export default function Skills() {
   return (
     <SectionWrapper id="skills">
       <div className="text-center mb-16 md:mb-20">
-        <h2 className="heading-section text-white mb-4">Mastered Capabilities</h2>
-        <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
+        <h2 className="heading-section text-[var(--foreground)] mb-4">Mastered Capabilities</h2>
+        <p className="text-[var(--text-secondary)] text-lg md:text-xl max-w-2xl mx-auto font-light">
           A breakdown of my technical arsenal and professional soft skills.
         </p>
       </div>
@@ -73,9 +73,9 @@ export default function Skills() {
         {skillCategories.map((category) => (
           <div key={category.title} className="bento-card p-8 md:p-10 flex flex-col h-full relative overflow-hidden group">
             {/* Background Glow */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-[60px] group-hover:bg-purple-600/10 transition-colors duration-500" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--accent-glow)] rounded-full blur-[60px] group-hover:opacity-60 transition-colors duration-500" />
             
-            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-500 mb-10 relative z-10 border-l border-purple-500/50 pl-4">
+            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--text-secondary)] mb-10 relative z-10 border-l border-purple-500/50 pl-4">
               {category.title}
             </h3>
 
@@ -83,15 +83,15 @@ export default function Skills() {
               {category.skills.map((skill) => (
                 <div 
                   key={skill.name} 
-                  className="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05] hover:border-white/10 hover:bg-white/[0.04] transition-all duration-300 group/item"
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-[var(--btn-secondary-bg)] border border-[var(--btn-secondary-border)] hover:border-[var(--accent)] hover:bg-[var(--card-bg-hover)] transition-all duration-300 group/item"
                 >
                   <div 
-                    className="w-10 h-10 rounded-xl flex items-center justify-center bg-white/[0.03] transition-colors duration-300 shadow-inner"
+                    className="w-10 h-10 rounded-xl flex items-center justify-center bg-[var(--btn-secondary-bg)] transition-colors duration-300 shadow-inner"
                     style={{ color: skill.color }}
                   >
                     {skill.icon}
                   </div>
-                  <span className="text-zinc-300 font-medium tracking-tight group-hover/item:text-white transition-colors duration-300 text-base md:text-lg">
+                  <span className="text-[var(--text-secondary)] font-medium tracking-tight group-hover/item:text-[var(--foreground)] transition-colors duration-300 text-base md:text-lg">
                     {skill.name}
                   </span>
                 </div>
@@ -102,9 +102,9 @@ export default function Skills() {
       </div>
 
       {/* Soft Skills Section */}
-      <div className="mt-10 pt-10 border-t border-white/5">
+      <div className="mt-10 pt-10 border-t border-[var(--card-border)]">
         <div className="text-center mb-12">
-           <h3 className="text-xl font-bold text-white mb-3">Soft Skills</h3>
+           <h3 className="text-xl font-bold text-[var(--foreground)] mb-3">Soft Skills</h3>
            <div className="h-1 w-12 bg-purple-500 mx-auto rounded-full" />
         </div>
         
@@ -112,15 +112,15 @@ export default function Skills() {
           {softSkills.map((skill) => (
             <div 
               key={skill.name} 
-              className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-purple-500/30 hover:bg-purple-500/5 transition-all duration-500 group"
+              className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-[var(--btn-secondary-bg)] border border-[var(--btn-secondary-border)] hover:border-purple-500/30 hover:bg-purple-500/5 transition-all duration-500 group"
             >
               <div 
-                className="w-8 h-8 rounded-lg flex items-center justify-center bg-white/5 transition-transform duration-300 group-hover:scale-110"
+                className="w-8 h-8 rounded-lg flex items-center justify-center bg-[var(--btn-secondary-bg)] transition-transform duration-300 group-hover:scale-110"
                 style={{ color: skill.color }}
               >
                 {skill.icon}
               </div>
-              <span className="text-zinc-400 font-medium text-sm md:text-base group-hover:text-white transition-colors">
+              <span className="text-[var(--text-secondary)] font-medium text-sm md:text-base group-hover:text-[var(--foreground)] transition-colors">
                 {skill.name}
               </span>
             </div>

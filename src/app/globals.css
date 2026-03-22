@@ -10,6 +10,7 @@
   --background: #000000;
   --foreground: #ffffff;
   --card-bg: #09090b;
+  --card-bg-hover: #141417;
   --card-border: rgba(255, 255, 255, 0.05);
   --accent: #8b5cf6; 
   --accent-glow: rgba(139, 92, 246, 0.2);
@@ -18,12 +19,22 @@
   --btn-secondary-bg: rgba(255, 255, 255, 0.05);
   --btn-secondary-border: rgba(255, 255, 255, 0.15);
   --text-secondary: #a1a1aa;
+  --text-gradient: linear-gradient(135deg, #fff 30%, rgba(255, 255, 255, 0.4) 100%);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.1);
+  --image-opacity: 0.2;
+  --image-opacity-hover: 0.4;
+}
+
+[data-theme='dark'] {
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 [data-theme='light'] {
   --background: #ffffff;
   --foreground: #000000;
-  --card-bg: #f4f4f5; /* zinc-100 */
+  --card-bg: #f4f4f5; 
+  --card-bg-hover: #e4e4e7;
   --card-border: rgba(0, 0, 0, 0.08);
   --accent: #7c3aed;
   --accent-glow: rgba(124, 58, 237, 0.1);
@@ -32,6 +43,10 @@
   --btn-secondary-bg: rgba(0, 0, 0, 0.05);
   --btn-secondary-border: rgba(0, 0, 0, 0.1);
   --text-secondary: #52525b;
+  --text-gradient: linear-gradient(135deg, #000 30%, rgba(0, 0, 0, 0.4) 100%);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.1);
+  --image-opacity: 0.9;
+  --image-opacity-hover: 1;
 }
 
 ::selection {
@@ -39,9 +54,14 @@
   color: var(--foreground);
 }
 
+html,
 body {
   background-color: var(--background);
   color: var(--foreground);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body {
   font-family: var(--font-sans);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -62,7 +82,7 @@ body::before {
 }
 
 .bento-card {
-  background: linear-gradient(to bottom right, rgba(20, 20, 23, 0.8), rgba(9, 9, 11, 0.9));
+  background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 2rem;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -73,10 +93,10 @@ body::before {
 }
 
 .bento-card:hover {
-  border-color: rgba(139, 92, 246, 0.3);
-  background: linear-gradient(to bottom right, rgba(20, 20, 23, 0.9), rgba(139, 92, 246, 0.05));
+  border-color: var(--accent);
+  background: var(--card-bg-hover);
   transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5), 0 18px 36px -18px rgba(139, 92, 246, 0.2);
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.2), 0 18px 36px -18px var(--accent-glow);
 }
 
 .bento-card::after {
@@ -88,6 +108,10 @@ body::before {
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s;
+}
+
+[data-theme='light'] .bento-card::after {
+  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(0, 0, 0, 0.03), transparent 40%);
 }
 
 .bento-card:hover::after {
@@ -146,17 +170,18 @@ body::before {
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.3);
+  background: var(--btn-secondary-bg);
+  opacity: 0.8;
+  border-color: var(--accent);
 }
 
 .form-input {
   width: 100%;
   padding: 1rem 1.25rem;
-  background: #0a0a0a;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 0.75rem;
-  color: #fff;
+  color: var(--foreground);
   transition: all 0.3s ease;
   outline: none;
 }
@@ -182,7 +207,7 @@ body::before {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #fff 30%, rgba(255, 255, 255, 0.4) 100%);
+  background: var(--text-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -197,10 +222,10 @@ body::before {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--scrollbar-thumb);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.5);
+  background: var(--accent);
 }

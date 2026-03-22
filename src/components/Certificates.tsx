@@ -39,8 +39,8 @@ export default function Certificates() {
   return (
     <SectionWrapper id="certificates">
       <div className="text-center mb-16 md:mb-20">
-        <h2 className="heading-section text-white mb-4">Certifications</h2>
-        <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
+        <h2 className="heading-section text-[var(--foreground)] mb-4">Certifications</h2>
+        <p className="text-[var(--text-secondary)] text-lg md:text-xl max-w-2xl mx-auto font-light">
           Professional achievements and validated expertise.
         </p>
       </div>
@@ -57,29 +57,29 @@ export default function Certificates() {
             {/* Certificate Image Background */}
             <div className="absolute inset-0 z-0">
                {/* Note: User needs to add these images to public folder */}
-               <div className="w-full h-full bg-zinc-900 group-hover:scale-105 transition-transform duration-700">
+               <div className="w-full h-full bg-[var(--background)] group-hover:scale-105 transition-transform duration-700">
                   <Image 
                     src={cert.image} 
                     alt={cert.title}
                     fill
-                    className="object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500"
+                    className="object-cover transition-opacity duration-500 opacity-[var(--image-opacity)] group-hover:opacity-[var(--image-opacity-hover)]"
                   />
                </div>
-               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+               <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)] via-[var(--background)]/40 to-transparent" />
             </div>
 
             {/* Content Over the Image */}
             <div className="relative z-10 p-8 md:p-10 w-full mt-auto">
               <div className="flex justify-between items-end">
                 <div className="flex-1">
-                  <span className="inline-block text-[10px] uppercase font-bold tracking-widest text-zinc-500 mb-3">Issued {cert.year}</span>
-                  <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-2 leading-tight">
+                  <span className="inline-block text-[10px] uppercase font-bold tracking-widest text-[var(--text-secondary)] mb-3">Issued {cert.year}</span>
+                  <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-[var(--foreground)] mb-2 leading-tight">
                     {cert.title}
                   </h3>
-                  <p className="text-zinc-400 font-medium text-lg leading-relaxed">{cert.issuer}</p>
+                  <p className="text-[var(--text-secondary)] font-medium text-lg leading-relaxed">{cert.issuer}</p>
                 </div>
                 
-                <div className="w-12 h-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0 duration-500 backdrop-blur-md shrink-0 ml-4 mb-2">
+                <div className="w-12 h-12 rounded-full border border-[var(--card-border)] bg-[var(--btn-secondary-bg)] flex items-center justify-center text-[var(--foreground)] opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0 duration-500 backdrop-blur-md shrink-0 ml-4 mb-2">
                   <FiArrowUpRight size={24} />
                 </div>
               </div>

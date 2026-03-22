@@ -27,8 +27,8 @@ export default function Education() {
   return (
     <SectionWrapper id="education">
       <div className="text-center mb-16 md:mb-20">
-        <h2 className="heading-section text-white mb-4">Education</h2>
-        <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
+        <h2 className="heading-section text-[var(--foreground)] mb-4">Education</h2>
+        <p className="text-[var(--text-secondary)] text-lg md:text-xl max-w-2xl mx-auto font-light">
           My core academic journey and academic excellence.
         </p>
       </div>
@@ -39,15 +39,15 @@ export default function Education() {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
               
               <div className="flex flex-col gap-2 relative z-10">
-                <h3 className="text-xl md:text-2xl font-bold tracking-tight text-white">{item.degree}</h3>
-                <p className="text-zinc-400 font-medium">{item.institution}</p>
+                <h3 className="text-xl md:text-2xl font-bold tracking-tight text-[var(--foreground)]">{item.degree}</h3>
+                <p className="text-[var(--text-secondary)] font-medium">{item.institution}</p>
               </div>
 
               <div className="flex items-center gap-3 shrink-0 relative z-10">
                 <span className="text-xs font-bold tracking-wide px-3 py-1.5 border border-purple-500/20 bg-purple-500/10 rounded-full text-purple-400">
                   {item.score}
                 </span>
-                <span className="text-xs font-semibold px-3 py-1.5 bg-[#111] border border-white/5 rounded-full text-zinc-500 uppercase tracking-widest">
+                <span className="text-xs font-semibold px-3 py-1.5 bg-[var(--btn-secondary-bg)] border border-[var(--btn-secondary-border)] rounded-full text-[var(--text-secondary)] uppercase tracking-widest">
                   {item.year}
                 </span>
               </div>

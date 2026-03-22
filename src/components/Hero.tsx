@@ -17,17 +17,17 @@ export default function Hero() {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className="max-w-5xl mx-auto flex flex-col items-center"
       >
-        <div className="mb-8 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-zinc-300 text-xs font-semibold tracking-widest uppercase backdrop-blur-md">
+        <div className="mb-8 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[var(--card-border)] bg-[var(--btn-secondary-bg)] text-[var(--text-secondary)] text-xs font-semibold tracking-widest uppercase backdrop-blur-md">
           <span className="w-2 h-2 rounded-full bg-purple-500 shadow-[0_0_10px_rgba(139,92,246,0.8)]" />
           Omvesh Singh — Software & AI
         </div>
 
-        <h1 className="heading-jumbo text-white mb-8">
+        <h1 className="heading-jumbo text-[var(--foreground)] mb-8">
           Elevating products <br className="hidden md:block"/> 
           with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500">Applied AI.</span>
         </h1>
         
-        <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-12 leading-relaxed font-light">
+        <p className="text-lg md:text-xl text-[var(--text-secondary)] max-w-2xl mb-12 leading-relaxed font-light">
            I craft intelligent systems, scalable cloud deployments, and seamless frontend experiences for teams pushing the boundaries of technology.
         </p>
 

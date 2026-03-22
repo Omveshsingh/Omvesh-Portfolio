@@ -8,8 +8,8 @@ export default function Resume() {
   return (
     <SectionWrapper id="resume">
       <div className="text-center mb-16 md:mb-20">
-        <h2 className="heading-section text-white mb-4">Resume</h2>
-        <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
+        <h2 className="heading-section text-[var(--foreground)] mb-4">Resume</h2>
+        <p className="text-[var(--text-secondary)] text-lg md:text-xl max-w-2xl mx-auto font-light">
           Get a comprehensive overview of my professional experience and skills.
         </p>
       </div>
@@ -25,11 +25,11 @@ export default function Resume() {
               <FiFileText size={40} />
             </div>
 
-            <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-6">
+            <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-[var(--foreground)] mb-6">
               Download Full Credentials
             </h3>
 
-            <p className="text-zinc-400 text-lg md:text-xl font-light leading-relaxed max-w-xl mb-12">
+            <p className="text-[var(--text-secondary)] text-lg md:text-xl font-light leading-relaxed max-w-xl mb-12">
               Deep dive into my technical journey, detailed project breakdowns, and academic milestones in a single document.
             </p>
 
@@ -55,11 +55,11 @@ export default function Resume() {
           </div>
 
           {/* Decorative Footer */}
-          <div className="relative z-10 mt-16 pt-8 border-t border-white/5 w-full flex justify-center">
-            <div className="flex items-center gap-4 text-zinc-500 text-xs font-bold tracking-[0.2em] uppercase">
-              <div className="h-[1px] w-8 bg-zinc-800" />
+          <div className="relative z-10 mt-16 pt-8 border-t border-[var(--card-border)] w-full flex justify-center">
+            <div className="flex items-center gap-4 text-[var(--text-secondary)] text-xs font-bold tracking-[0.2em] uppercase">
+              <div className="h-[1px] w-8 bg-[var(--card-border)]" />
               <span>Available for Opportunities</span>
-              <div className="h-[1px] w-8 bg-zinc-800" />
+              <div className="h-[1px] w-8 bg-[var(--card-border)]" />
             </div>
           </div>
         </div>

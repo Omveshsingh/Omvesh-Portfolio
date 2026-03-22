@@ -32,13 +32,13 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-base font-bold" style={{ color: 'var(--foreground)' }}>Omvesh Singh</p>
-          <p className="text-sm" style={{ color: 'var(--text-muted)' }}>AI Engineer | ML Developer</p>
+          <p className="text-base font-bold text-[var(--foreground)]">Omvesh Singh</p>
+          <p className="text-sm text-[var(--text-secondary)]">AI Engineer | ML Developer</p>
         </div>
 
         <div className="w-full max-w-xs h-px" style={{ background: 'linear-gradient(90deg, transparent, var(--card-border), transparent)' }} />
 
-        <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
+        <p className="text-xs text-[var(--text-secondary)]">
           &copy; {currentYear > 2026 ? currentYear : 2026} Omvesh Singh. All rights reserved.
         </p>
       </div>
