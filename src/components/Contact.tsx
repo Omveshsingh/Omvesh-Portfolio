@@ -9,15 +9,41 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSent, setIsSent] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: `New Inquiry from ${formData.name}`,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setIsSubmitting(false);
+        setIsSent(true);
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setIsSent(false), 3000);
+      } else {
+        setIsSubmitting(false);
+        alert(result.message || "Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
       setIsSubmitting(false);
-      setIsSent(true);
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setIsSent(false), 3000);
-    }, 1500);
+      alert("Uh oh! Network error. Check your connection.");
+    }
   };
 
   return (
