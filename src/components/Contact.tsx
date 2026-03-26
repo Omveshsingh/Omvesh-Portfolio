@@ -52,9 +52,9 @@ export default function Contact() {
 
         {/* Contact Info Intro */}
         <div className="flex flex-col justify-center">
-          <h2 className="heading-jumbo text-[var(--foreground)] mb-6">
-            Let&apos;s talk <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500">Business.</span>
+          <h2 className="text-[clamp(2.5rem,7vw,5.5rem)] font-[800] leading-[1] tracking-[-0.04em] text-[var(--foreground)] mb-6">
+            Let&apos;s Build Something <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500">Impactful</span>
           </h2>
           <p className="text-lg md:text-xl text-[var(--text-secondary)] font-light leading-relaxed mb-12">
             Open to AI engineering roles, freelance software projects, and research collaborations. I usually respond within 24 hours.

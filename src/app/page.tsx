@@ -18,9 +18,9 @@ export default function Home() {
         <Hero />
 
         <div className="px-6 md:px-12 lg:px-20 w-full max-w-[1400px] mx-auto flex flex-col gap-12 md:gap-24 mt-16">
+          <About />
           <Projects />
           <Skills />
-          <About />
           <Certificates />
           <Achievements />
           <Education />

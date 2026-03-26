@@ -32,7 +32,7 @@ export default function Projects() {
   return (
     <SectionWrapper id="projects">
       <div className="text-center mb-16 md:mb-20">
-        <h2 className="heading-section text-[var(--foreground)] mb-4">Selected Case Studies</h2>
+        <h2 className="heading-section text-[var(--foreground)] mb-4">What I’ve Built</h2>
         <p className="text-[var(--text-secondary)] text-lg md:text-xl max-w-2xl mx-auto font-light">
           A showcase of intelligent solutions designed to solve complex challenges and drive tangible results.
         </p>
