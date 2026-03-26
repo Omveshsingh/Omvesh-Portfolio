@@ -27,12 +27,13 @@ export default function About() {
         <div className="bento-card lg:col-span-8 p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center md:items-start relative overflow-hidden text-center md:text-left">
           <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-600/10 rounded-full blur-[80px]" />
 
-          <div className="shrink-0 w-40 h-40 md:w-56 md:h-64 relative rounded-[2rem] overflow-hidden border border-[var(--card-border)] bg-[var(--background)]">
+          <div className="shrink-0 w-40 h-40 md:w-56 md:h-64 relative rounded-[2rem] overflow-hidden border border-[var(--card-border)] bg-[var(--background)] shadow-2xl">
             <Image
-              src="/profile.png"
-              alt="Omvesh Singh"
+              src="/portfolio.png"
+              alt="Portfolio showcase"
               fill
-              className="object-cover mix-blend-luminosity opacity-[var(--image-opacity)]"
+              className="object-cover object-top"
+              priority
             />
           </div>
 
